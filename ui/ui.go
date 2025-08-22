@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/ekkinox/yai/ai"
-	"github.com/ekkinox/yai/config"
-	"github.com/ekkinox/yai/history"
-	"github.com/ekkinox/yai/run"
+	"github.com/jdubba/yai/ai"
+	"github.com/jdubba/yai/config"
+	"github.com/jdubba/yai/history"
+	"github.com/jdubba/yai/run"
 
 	"github.com/charmbracelet/bubbles/spinner"
 	"github.com/charmbracelet/bubbles/textinput"
