@@ -1,0 +1,286 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Getting started | 🚀 Yai 💬</title>
+<meta name="description" content="Yai (your AI) is an artificial intelligence powered terminal assistant.  Use it to prepare and execute any command lines from requests expressed in your natural language.  You can also engage in conversation with it about any topics you may think about. Unleash the power of AI with the comfort of staying at /home !">
+
+
+  <meta name="author" content="Jonathan Vuillemin">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="🚀 Yai 💬">
+<meta property="og:title" content="Getting started">
+<meta property="og:url" content="http://localhost:4000/getting-started/">
+
+
+  <meta property="og:description" content="Yai (your AI) is an artificial intelligence powered terminal assistant.  Use it to prepare and execute any command lines from requests expressed in your natural language.  You can also engage in conversation with it about any topics you may think about. Unleash the power of AI with the comfort of staying at /home !">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/getting-started/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="🚀 Yai 💬 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          🚀 Yai 💬
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/getting-started/"
+                
+                
+              >Getting started</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/usage/"
+                
+                
+              >Usage</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/examples/"
+                
+                
+              >Examples</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://github.com/ekkinox/yai"
+                
+                
+              >GitHub</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Getting started">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h2 id="what-is-yai-">What is <code class="language-plaintext highlighter-rouge">Yai</code> ?</h2>
+
+<p><code class="language-plaintext highlighter-rouge">Yai</code> (your AI) is an assistant for your terminal, unleashing the power of artificial intelligence to streamline your command line experience.</p>
+
+<p>It is already aware of your:</p>
+<ul>
+  <li>operating system &amp; distribution</li>
+  <li>username, shell &amp; home directory</li>
+  <li>preferred editor</li>
+</ul>
+
+<p>And you can also give any supplementary preferences to fine tune your experience.</p>
+
+<h2 id="installation">Installation</h2>
+
+<p>To install <code class="language-plaintext highlighter-rouge">Yai</code>, simply run:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-sS</span> https://raw.githubusercontent.com/ekkinox/yai/main/install.sh | bash
+</code></pre></div></div>
+
+<ul>
+  <li>this will detect the proper binary to install for your machine</li>
+  <li>and upgrade to the latest stable version if already installed</li>
+</ul>
+
+<p>You can also install it from the <a href="https://github.com/ekkinox/yai/releases">available releases</a> from the GitHub repository.</p>
+
+<p>To uninstall <code class="language-plaintext highlighter-rouge">Yai</code>, simply run the provided uninstallation script:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-sS</span> https://raw.githubusercontent.com/ekkinox/yai/main/uninstall.sh | bash
+</code></pre></div></div>
+
+<h2 id="configuration">Configuration</h2>
+
+<p>At first run, <code class="language-plaintext highlighter-rouge">Yai</code> will ask you to provide an <a href="https://platform.openai.com/account/api-keys">OpenAI API key</a> (required to interact with <strong>ChatGPT AI</strong>).</p>
+
+<p>It will then generate your configuration in the file <code class="language-plaintext highlighter-rouge">~/.config/yai.json</code>, with the following structure:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"openai_key"</span><span class="p">:</span><span class="w"> </span><span class="s2">"sk-xxxxxxxxx"</span><span class="p">,</span><span class="w">       </span><span class="err">//</span><span class="w"> </span><span class="err">OpenAI</span><span class="w"> </span><span class="err">API</span><span class="w"> </span><span class="err">key</span><span class="w"> </span><span class="err">(mandatory)</span><span class="w">
+  </span><span class="nl">"openai_model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gpt-3.5-turbo"</span><span class="p">,</span><span class="w">    </span><span class="err">//</span><span class="w"> </span><span class="err">OpenAI</span><span class="w"> </span><span class="err">API</span><span class="w"> </span><span class="err">model</span><span class="w"> </span><span class="err">(default</span><span class="w"> </span><span class="err">gpt</span><span class="mf">-3.5</span><span class="err">-turbo)</span><span class="w">
+  </span><span class="nl">"openai_proxy"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="p">,</span><span class="w">                 </span><span class="err">//</span><span class="w"> </span><span class="err">OpenAI</span><span class="w"> </span><span class="err">API</span><span class="w"> </span><span class="err">proxy</span><span class="w"> </span><span class="err">(default</span><span class="w"> </span><span class="err">disabled)</span><span class="w">
+  </span><span class="nl">"openai_temperature"</span><span class="p">:</span><span class="w"> </span><span class="mf">0.2</span><span class="p">,</span><span class="w">          </span><span class="err">//</span><span class="w"> </span><span class="err">OpenAI</span><span class="w"> </span><span class="err">API</span><span class="w"> </span><span class="err">temperature</span><span class="w"> </span><span class="err">(defaut</span><span class="w"> </span><span class="mf">0.2</span><span class="err">)</span><span class="w">
+  </span><span class="nl">"openai_max_tokens"</span><span class="p">:</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span><span class="w">          </span><span class="err">//</span><span class="w"> </span><span class="err">OpenAI</span><span class="w"> </span><span class="err">API</span><span class="w"> </span><span class="err">max</span><span class="w"> </span><span class="err">tokens</span><span class="w"> </span><span class="err">(default</span><span class="w"> </span><span class="mi">1000</span><span class="err">)</span><span class="w">
+  </span><span class="nl">"user_default_prompt_mode"</span><span class="p">:</span><span class="w"> </span><span class="s2">"exec"</span><span class="p">,</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="err">user</span><span class="w"> </span><span class="err">prefered</span><span class="w"> </span><span class="err">prompt</span><span class="w"> </span><span class="err">mode:</span><span class="w"> </span><span class="s2">"exec"</span><span class="w"> </span><span class="err">(default)</span><span class="w"> </span><span class="err">or</span><span class="w"> </span><span class="s2">"chat"</span><span class="w">
+  </span><span class="nl">"user_preferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">""</span><span class="w">              </span><span class="err">//</span><span class="w"> </span><span class="err">user</span><span class="w"> </span><span class="err">preferences</span><span class="p">,</span><span class="w"> </span><span class="err">expressed</span><span class="w"> </span><span class="err">in</span><span class="w"> </span><span class="err">natural</span><span class="w"> </span><span class="err">language</span><span class="w"> </span><span class="err">(default</span><span class="w"> </span><span class="err">none)</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h2 id="fine-tuning">Fine tuning</h2>
+
+<p>You can fine tune <code class="language-plaintext highlighter-rouge">Yai</code> by editing the settings in the <code class="language-plaintext highlighter-rouge">~/.config/yai.json</code> configuration file.</p>
+
+<p>Note that in <code class="language-plaintext highlighter-rouge">REPL</code> mode, you can press anytime <code class="language-plaintext highlighter-rouge">ctrl+s</code> to edit settings:</p>
+<ul>
+  <li>it will open your editor on the configuration file</li>
+  <li>and will hot reload settings changes when you’re done.</li>
+</ul>
+
+<h3 id="model">Model</h3>
+
+<p>You can use the <code class="language-plaintext highlighter-rouge">openai_model</code> to configure the AI model you want to use. By default, the model <code class="language-plaintext highlighter-rouge">gpt-3.5-turbo</code> is used.</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"openai_model"</span><span class="p">:</span><span class="w"> </span><span class="s2">"gpt-4"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>You can find the list of <a href="https://platform.openai.com/docs/models/model-endpoint-compatibility">supported models here</a> (must be compatible with OpenAI API <code class="language-plaintext highlighter-rouge">v1/chat/completions</code>).</p>
+
+<h3 id="preferences">Preferences</h3>
+
+<p>You can use the <code class="language-plaintext highlighter-rouge">user_preferences</code> to express any preferences in your natural language:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"user_preferences"</span><span class="p">:</span><span class="w"> </span><span class="s2">"I want you to talk like an humorist, and I want you to always add the -y flag when I use dnf"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">Yai</code> will take them into account.</p>
+
+    </section>
+  </article>
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/noxekki" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/ekkinox" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">🚀 Yai 💬</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
