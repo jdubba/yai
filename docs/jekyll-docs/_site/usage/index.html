@@ -1,0 +1,266 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.27.3 by Michael Rose
+  Copyright 2013-2025 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Usage | 🚀 Yai 💬</title>
+<meta name="description" content="Yai (your AI) is an artificial intelligence powered terminal assistant.  Use it to prepare and execute any command lines from requests expressed in your natural language.  You can also engage in conversation with it about any topics you may think about. Unleash the power of AI with the comfort of staying at /home !">
+
+
+  <meta name="author" content="Jonathan Vuillemin">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="🚀 Yai 💬">
+<meta property="og:title" content="Usage">
+<meta property="og:url" content="http://localhost:4000/usage/">
+
+
+  <meta property="og:description" content="Yai (your AI) is an artificial intelligence powered terminal assistant.  Use it to prepare and execute any command lines from requests expressed in your natural language.  You can also engage in conversation with it about any topics you may think about. Unleash the power of AI with the comfort of staying at /home !">
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="canonical" href="http://localhost:4000/usage/">
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title="🚀 Yai 💬 Feed">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@latest/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--splash wide" dir="ltr">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+          🚀 Yai 💬
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a
+                href="/getting-started/"
+                
+                
+              >Getting started</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/usage/"
+                
+                
+              >Usage</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="/examples/"
+                
+                
+              >Examples</a>
+            </li><li class="masthead__menu-item">
+              <a
+                href="https://github.com/ekkinox/yai"
+                
+                
+              >GitHub</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+<div id="main" role="main">
+  <article class="splash" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Usage">
+    
+    
+    
+
+    <section class="page__content" itemprop="text">
+      <h2 id="cli-mode">CLI mode</h2>
+
+<blockquote>
+  <p>CLI mode is made to be integrated in your command lines workflow.</p>
+</blockquote>
+
+<p>You can perform a single run:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yai list all processes listening on port 8080
+</code></pre></div></div>
+
+<p>You can ask for a command line generation, enforcing <code class="language-plaintext highlighter-rouge">🚀 exec</code> prompt mode usage with <code class="language-plaintext highlighter-rouge">-e</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yai <span class="nt">-e</span> show the disk usage of my docker resources
+</code></pre></div></div>
+
+<p>You can ask any question, enforcing <code class="language-plaintext highlighter-rouge">💬 chat</code> prompt mode usage with <code class="language-plaintext highlighter-rouge">-c</code>:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yai <span class="nt">-c</span> generate me a go application example using fiber
+</code></pre></div></div>
+
+<p>You can also <code class="language-plaintext highlighter-rouge">pipe</code> input that will be taken into account in your request:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>some_script.go | yai <span class="nt">-c</span> generate unit tests
+</code></pre></div></div>
+
+<p>Or even:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">cat </span>error.log | yai <span class="nt">-c</span> explain what is wrong here
+</code></pre></div></div>
+
+<h2 id="repl-mode">REPL mode</h2>
+
+<blockquote>
+  <p>REPL mode is made to work in an interactive way.</p>
+</blockquote>
+
+<p>Just run:</p>
+
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>yai
+</code></pre></div></div>
+
+<p>This will open a <a href="https://en.wikipedia.org/wiki/Read%E2%80%93eval%E2%80%93print_loop">REPL</a> interface, with 2 types of prompts (use <code class="language-plaintext highlighter-rouge">tab</code> to switch)</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">🚀 exec</code>: will generate a command line to execute for what you’re asking</li>
+  <li><code class="language-plaintext highlighter-rouge">💬 chat</code>: will engage in a discussion to help you the best way possible</li>
+</ul>
+
+<p>You also can use the following <strong>keyboard shortcuts</strong>:</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">↑</code> <code class="language-plaintext highlighter-rouge">↓</code>  : Navigate in history</li>
+  <li><code class="language-plaintext highlighter-rouge">tab</code>    : Switch between <code class="language-plaintext highlighter-rouge">🚀 exec</code> and <code class="language-plaintext highlighter-rouge">💬 chat</code> prompt modes</li>
+  <li><code class="language-plaintext highlighter-rouge">ctrl+h</code> : Show help</li>
+  <li><code class="language-plaintext highlighter-rouge">ctrl+s</code> : Edit settings</li>
+  <li><code class="language-plaintext highlighter-rouge">ctrl+r</code> : Clear terminal and reset discussion history</li>
+  <li><code class="language-plaintext highlighter-rouge">ctrl+l</code> : Clear terminal but keep discussion history</li>
+  <li><code class="language-plaintext highlighter-rouge">ctrl+c</code> : Exit or interrupt command execution</li>
+</ul>
+
+
+    </section>
+  </article>
+</div>
+
+      
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        
+
+<div class="page__footer-follow">
+  <ul class="social-icons">
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/noxekki" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+          <li><a href="https://github.com/ekkinox" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+
+<div class="page__footer-copyright">&copy; 2025 <a href="http://localhost:4000">🚀 Yai 💬</a>. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/jekyll-themes/minimal-mistakes/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
